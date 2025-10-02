@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About QSC - Important Information | Qingdao Sigma Chemical</title>
+    <meta name="description" content="Important information about QSC operations, stock availability, product identification, and customer service.">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#1a1a1a">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1a1a1a;
+            --primary-light: #2d2d2d;
+            --accent: #0066cc;
+            --accent-hover: #0052a3;
+            --success: #28a745;
+            --danger: #dc3545;
+            --warning: #ffc107;
+            --info: #17a2b8;
+            --gray-50: #fafafa;
+            --gray-100: #f5f5f5;
+            --gray-200: #e5e5e5;
+            --gray-600: #525252;
+            --gray-700: #404040;
+            --gray-900: #171717;
+            --border: #e0e0e0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--gray-900);
+            background: #ffffff;
+        }
+
+        /* Header */
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-top {
+            background: var(--primary-light);
+            padding: 0.5rem 0;
+            font-size: 0.875rem;
+        }
+
+        .header-top-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .header-main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.125rem;
+            opacity: 0.9;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 1rem;
+        }
+
+        .message-header {
+            background: var(--gray-50);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--accent);
+        }
+
+        .message-header p {
+            margin-bottom: 0.5rem;
+        }
+
+        .message-header .signature {
+            font-weight: 700;
+            color: var(--accent);
+            margin-top: 1rem;
+        }
+
+        .info-section {
+            margin-bottom: 3rem;
+        }
+
+        .section-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.5rem;
+            height: 2.5rem;
+            background: var(--accent);
+            color: white;
+            border-radius: 50%;
+            font-weight: 700;
+            margin-right: 1rem;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .section-content {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            margin-left: 3.5rem;
+        }
+
+        .section-content p {
+            margin-bottom: 1rem;
+        }
+
+        .section-content ul {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .section-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .alert {
+            padding: 1.25rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            font-weight: 500;
+        }
+
+        .alert-warning {
+            background: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeeba;
+        }
+
+        .alert-info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .sku-examples {
+            background: var(--gray-50);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            font-family: 'Courier New', monospace;
+        }
+
+        .apology-box {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 2px solid var(--accent);
+            margin: 2rem 0;
+        }
+
+        .apology-box h3 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, var(--accent) 0%, #0052a3 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .cta-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: white;
+            color: var(--accent);
+            padding: 0.875rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            margin-top: 1rem;
+            transition: all 0.2s;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .section-content {
+                margin-left: 0;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <div class="header-top-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/85254725263" target="_blank">+852 54725263</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-telegram"></i>
+                        <a href="https://t.me/qsctgchannel" target="_blank">t.me/qsctgchannel</a>
+                    </div>
+                </div>
+                <div>
+                    <span style="opacity: 0.8; font-size: 0.75rem;">US Domestic Operation</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 0.5rem;">
+                <img src="logo.png" alt="QSC Logo" style="height: 40px; width: auto;">
+            </a>
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Shop</a>
+                <a href="about.html" style="color: var(--accent);"><i class="fas fa-info-circle"></i> About</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Important Information</h1>
+        <p>Current Operations & Frequently Asked Questions</p>
+    </section>
+
+    <!-- Main Container -->
+    <div class="container">
+        <div class="message-header">
+            <p><strong>Hello everyone,</strong></p>
+            <p>Attached below are answers to the most frequent questions to keep everyone informed about our current operations.</p>
+            <p class="signature">— Tracy, QSC</p>
+        </div>
+
+        <!-- Section 1 -->
+        <div class="info-section">
+            <h2 class="section-title">
+                <span class="section-number">1</span>
+                Stock Availability
+            </h2>
+            <div class="section-content">
+                <p>Many were wondering why we still have such items while everyone is out. Due to the annual CNY shipping halt last year, we prepared significant stocks of everything in advance in end 2024. And we got busted straight before those holidays. Our US warehouses remained well-supplied with the unsold raw materials, oils, and peptides from pre-holiday production. <strong>This is why we still have inventory when others are running dry.</strong></p>
+
+                <div class="alert alert-warning">
+                    <strong>Low Stock Alert:</strong>
+                    <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+                        <li>Primo 100 is very low (likely sold out this week)</li>
+                        <li>Test C oil is very low</li>
+                        <li>Primo 200 is still available</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="info-section">
+            <h2 class="section-title">
+                <span class="section-number">2</span>
+                Cap Colors & SKU Identification
+            </h2>
+            <div class="section-content">
+                <p><strong>Cap colors are irrelevant.</strong> We have never tracked them. Every product is identified by a unique SKU printed under the barcode on its packaging.</p>
+
+                <div class="sku-examples">
+                    <p><strong>Oils:</strong> SKU is on the cardboard box</p>
+                    <p>Example: B014D7 (Mast P) | B002T2 (Test C)</p>
+                </div>
+
+                <div class="sku-examples">
+                    <p><strong>Peptides:</strong> SKU is on the bubble mailer</p>
+                    <p>Example: A066TRBT-40 (Tirzepatide 40mg)</p>
+                    <p><em>Note: May be under the shipping label, but it's there</em></p>
+                </div>
+
+                <div class="alert alert-info">
+                    <strong>Important:</strong> Please use the SKU for identification. Don't open everything and then ask how to tell them apart—the SKU is your answer.
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="info-section">
+            <h2 class="section-title">
+                <span class="section-number">3</span>
+                Peptide Quality & COAs
+            </h2>
+            <div class="section-content">
+                <p><strong>All batches were tested.</strong> If a cap color doesn't match your expectation, the COA still exists. You can find it by cross-referencing with past price lists or the HPLC thread on Meso. I trust your detective skills.</p>
+
+                <p><strong>Regarding storage:</strong> The peptides were and still stored on shelves. Scientific evidence on long-term storage of freeze-dried peptides shows minimal to no degradation. Their quality is not compromised.</p>
+            </div>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="info-section">
+            <h2 class="section-title">
+                <span class="section-number">4</span>
+                The "Honeysuckle Oil" Label Confusion
+            </h2>
+            <div class="section-content">
+                <div class="alert alert-warning">
+                    <strong>Our Mistake:</strong> This was an unfortunate old warehouse stupid labeling decision. A "Honeysuckle Oil Tren-H" sticker was applied to various oils (Test C, Deca, Mast, etc.).
+                </div>
+
+                <p><strong>We do not label the vials themselves, only the external packaging with its SKU.</strong> Please ignore the sticker and refer to the official SKU on the box or mailer.</p>
+            </div>
+        </div>
+
+        <!-- Section 5 -->
+        <div class="info-section">
+            <h2 class="section-title">
+                <span class="section-number">5</span>
+                Customer Service & Tracking Numbers
+            </h2>
+            <div class="section-content">
+                <p>Our operational capacity is limited. I am assisted by one colleague who manages tracking numbers, and her availability fluctuates due to health reasons. Therefore, <strong>tracking numbers are typically sent within 1-7 days of payment, sometimes more.</strong></p>
+
+                <div class="alert alert-info">
+                    <strong>Important:</strong> Sometimes, orders ship without a tracking number being given to the buyer. If you haven't received one, it does not mean your order hasn't shipped. Many clients receive packages without prior tracking.
+                </div>
+
+                <p>To avoid confusion, please confirm your order's SKUs with me after delivery. We are prioritizing getting your orders out the door over administrative speed.</p>
+            </div>
+        </div>
+
+        <!-- Section 6 -->
+        <div class="info-section">
+            <h2 class="section-title">
+                <span class="section-number">6</span>
+                Multiple Tracking Numbers & "Missing" Items
+            </h2>
+            <div class="section-content">
+                <p>With inventory spread across <strong>four US warehouses for OPSEC reasons</strong>, a single order may ship in multiple packages. You might receive up to four tracking numbers. Tablets may be with raws, some peptides with oils—it's organized for security, not aesthetics.</p>
+
+                <div class="alert alert-success">
+                    <strong>Your order is almost certainly not missing; it's just traveling from different locations.</strong>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 7 -->
+        <div class="info-section">
+            <h2 class="section-title">
+                <span class="section-number">7</span>
+                International Clients
+            </h2>
+            <div class="section-content">
+                <div class="apology-box">
+                    <h3>An Apology and a Promise</h3>
+                    <p>We sincerely apologize to our international clients. Until our legal situation is fully resolved, we cannot resume shipping to the UK, Australia, Canada, and others. We cannot offer restocks or new international services at this time.</p>
+
+                    <p><strong>Thank you for your patience.</strong> When we officially return, we will make it up to you. We will restore our full catalog, maintain our rigorous testing, and offer the most competitive prices—because at QSC, we don't just resell; we source and produce what others can't. Customer service will be a top priority again.</p>
+                </div>
+
+                <p>For now, we are a <strong>US-domestic operation</strong> selling existing inventory. Our peptide prices remain the most competitive on the market. Our steroid pricing is structured to manage the current high volume sustainably.</p>
+            </div>
+        </div>
+
+        <!-- CTA Box -->
+        <div class="cta-box">
+            <h3>Thank You For Your Business</h3>
+            <p>We appreciate your understanding and continued support during this time.</p>
+            <a href="index.html" class="cta-btn"><i class="fas fa-shopping-cart"></i> Browse Products</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Qingdao Sigma Chemical Co., Ltd</p>
+        <p style="margin: 0.5rem 0;">WhatsApp: <a href="https://wa.me/85254725263" target="_blank">+852 54725263</a> | Telegram: <a href="https://t.me/qsctgchannel" target="_blank">t.me/qsctgchannel</a></p>
+        <p style="margin: 1rem 0; font-size: 0.875rem;">Payment Methods: Bitcoin, USDT, ETH, USDC, PYUSD, SOL, XRP, LTC, ADA, BNB, TRON, cbBTC</p>
+        <p style="margin-top: 1.5rem; opacity: 0.7; font-size: 0.875rem;">© 2025 QSC. All rights reserved. For research purposes only.</p>
+    </footer>
+</body>
+</html>

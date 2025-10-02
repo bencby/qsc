@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://qsc.store/sitemap.xml
+
+# Performance
+Crawl-delay: 1
+
+# Block sensitive paths
+Disallow: /admin/
+Disallow: /checkout/
+Disallow: /cart/
+Disallow: /*.json$
+Disallow: /sw.js
+
+# Allow important pages
+Allow: /index.html
+Allow: /products/
+Allow: /*.css$
+Allow: /*.js$
