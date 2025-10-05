@@ -1,12 +1,1502 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QSC - Qingdao Sigma Chemical Co., Ltd | Premium Research Chemicals</title>
+    <meta name="description" content="Premium research chemicals, peptides, and HGH. Fast USA & EU shipping. 12 crypto payment options accepted.">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#1a1a1a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1a1a1a;
+            --primary-light: #2d2d2d;
+            --accent: #0066cc;
+            --accent-hover: #0052a3;
+            --success: #28a745;
+            --danger: #dc3545;
+            --warning: #ffc107;
+            --gray-50: #fafafa;
+            --gray-100: #f5f5f5;
+            --gray-200: #e5e5e5;
+            --gray-300: #d4d4d4;
+            --gray-600: #525252;
+            --gray-700: #404040;
+            --gray-900: #171717;
+            --border: #e0e0e0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--gray-900);
+            background: #ffffff;
+        }
+
+        /* Header */
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-top {
+            background: var(--primary-light);
+            padding: 0.5rem 0;
+            font-size: 0.875rem;
+        }
+
+        .header-top-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .header-main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .warehouse-selector {
+            display: flex;
+            gap: 0.5rem;
+            background: rgba(255,255,255,0.1);
+            padding: 0.25rem;
+            border-radius: 8px;
+        }
+
+        .warehouse-btn {
+            background: transparent;
+            border: none;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
+            font-size: 0.875rem;
+        }
+
+        .warehouse-btn:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .warehouse-btn.active {
+            background: white;
+            color: var(--primary);
+        }
+
+        .cart-btn {
+            background: var(--accent);
+            color: white;
+            padding: 0.625rem 1.25rem;
+            border-radius: 8px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.2s;
+        }
+
+        .cart-btn:hover {
+            background: var(--accent-hover);
+        }
+
+        .cart-count {
+            background: white;
+            color: var(--accent);
+            padding: 0.25rem 0.625rem;
+            border-radius: 12px;
+            font-size: 0.875rem;
+            font-weight: 700;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.125rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+
+        .payment-methods {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .payment-badge {
+            background: rgba(255,255,255,0.15);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        /* Search & Filter */
+        .search-filter-section {
+            background: var(--gray-50);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border);
+        }
+
+        .search-box {
+            position: relative;
+            margin-bottom: 1rem;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 0.875rem 1rem 0.875rem 3rem;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.2s;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--gray-600);
+        }
+
+        .category-tabs {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .category-tab {
+            background: white;
+            border: 2px solid var(--border);
+            padding: 0.625rem 1.25rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
+            font-size: 0.875rem;
+        }
+
+        .category-tab.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .category-tab:hover:not(.active) {
+            border-color: var(--primary);
+        }
+
+        /* Products Grid */
+        .products-section {
+            margin-bottom: 3rem;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .product-count {
+            background: var(--gray-100);
+            color: var(--gray-700);
+            padding: 0.375rem 0.875rem;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .product-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: all 0.2s;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+
+        .warehouse-badge {
+            display: inline-block;
+            background: var(--gray-100);
+            color: var(--gray-700);
+            padding: 0.25rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .product-name {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 0.5rem;
+        }
+
+        .product-name.tested {
+            color: var(--accent);
+            cursor: pointer;
+        }
+
+        .product-name.tested:hover {
+            text-decoration: underline;
+        }
+
+        .product-dosage {
+            color: var(--gray-600);
+            font-size: 0.875rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .product-pricing {
+            margin: 1.25rem 0;
+            padding: 1rem;
+            background: var(--gray-50);
+            border-radius: 8px;
+        }
+
+        .price-main {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .price-details {
+            font-size: 0.875rem;
+            color: var(--gray-600);
+            margin-top: 0.25rem;
+        }
+
+        .add-to-cart-btn {
+            width: 100%;
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 0.875rem;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 1rem;
+        }
+
+        .add-to-cart-btn:hover {
+            background: var(--primary-light);
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 2000;
+            overflow-y: auto;
+        }
+
+        .modal.active {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 2rem 1rem;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 12px;
+            max-width: 800px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        .modal-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            background: white;
+            z-index: 10;
+        }
+
+        .modal-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .close-btn {
+            background: var(--gray-100);
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--gray-600);
+            width: 2.5rem;
+            height: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all 0.2s;
+        }
+
+        .close-btn:hover {
+            background: var(--danger);
+            color: white;
+        }
+
+        .modal-body {
+            padding: 1.5rem;
+        }
+
+        .cart-empty {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: var(--gray-600);
+        }
+
+        .cart-item {
+            display: flex;
+            gap: 1rem;
+            padding: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .cart-item-info {
+            flex: 1;
+        }
+
+        .cart-item-name {
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .cart-item-details {
+            font-size: 0.875rem;
+            color: var(--gray-600);
+        }
+
+        .cart-item-quantity {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-top: 0.5rem;
+        }
+
+        .qty-btn {
+            background: var(--gray-200);
+            border: none;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 700;
+            transition: all 0.2s;
+        }
+
+        .qty-btn:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .cart-item-price {
+            font-weight: 700;
+            color: var(--accent);
+            font-size: 1.125rem;
+        }
+
+        .remove-btn {
+            background: var(--danger);
+            color: white;
+            border: none;
+            padding: 0.5rem 0.875rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.875rem;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .remove-btn:hover {
+            background: #c82333;
+        }
+
+        .cart-summary {
+            background: var(--gray-50);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 0.75rem 0;
+            font-weight: 600;
+        }
+
+        .summary-total {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent);
+            padding-top: 1rem;
+            border-top: 2px solid var(--border);
+        }
+
+        .checkout-btn {
+            width: 100%;
+            background: var(--success);
+            color: white;
+            border: none;
+            padding: 1rem;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1.125rem;
+            cursor: pointer;
+            margin-top: 1rem;
+            transition: all 0.2s;
+        }
+
+        .checkout-btn:hover {
+            background: #218838;
+        }
+
+        /* Payment Options */
+        .payment-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 0.75rem;
+            margin: 1.5rem 0;
+        }
+
+        .payment-option {
+            background: white;
+            border: 2px solid var(--border);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .payment-option:hover {
+            border-color: var(--accent);
+        }
+
+        .payment-option.selected {
+            border-color: var(--accent);
+            background: #f0f8ff;
+        }
+
+        .payment-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .payment-name {
+            font-weight: 600;
+            color: var(--gray-900);
+            font-size: 0.875rem;
+        }
+
+        .payment-network {
+            font-size: 0.75rem;
+            color: var(--gray-600);
+            margin-top: 0.25rem;
+        }
+
+        /* Payment Details */
+        .payment-details {
+            background: var(--gray-50);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        .qr-code {
+            width: 200px;
+            height: 200px;
+            background: white;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            margin: 1rem auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray-400);
+        }
+
+        .wallet-address {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            word-break: break-all;
+            font-family: 'Courier New', monospace;
+            font-size: 0.875rem;
+            margin: 1rem 0;
+            border: 2px solid var(--accent);
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .copy-btn {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 0.875rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            width: 100%;
+            margin-top: 0.5rem;
+            transition: all 0.2s;
+        }
+
+        .copy-btn:hover {
+            background: var(--accent-hover);
+        }
+
+        /* Forms */
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--gray-700);
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.2s;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        /* Checkout Steps */
+        .checkout-steps {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .checkout-steps::before {
+            content: '';
+            position: absolute;
+            top: 1.25rem;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--border);
+            z-index: 0;
+        }
+
+        .step {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            flex: 1;
+        }
+
+        .step-number {
+            width: 2.5rem;
+            height: 2.5rem;
+            background: var(--gray-200);
+            color: var(--gray-600);
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            border: 3px solid white;
+        }
+
+        .step.active .step-number {
+            background: var(--accent);
+            color: white;
+        }
+
+        .step.completed .step-number {
+            background: var(--success);
+            color: white;
+        }
+
+        .step-label {
+            font-size: 0.875rem;
+            color: var(--gray-600);
+            font-weight: 600;
+        }
+
+        .step.active .step-label {
+            color: var(--accent);
+        }
+
+        /* Alerts */
+        .alert {
+            padding: 1.25rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .alert-info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+
+        .alert-warning {
+            background: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeeba;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .category-tabs {
+                flex-direction: column;
+            }
+
+            .payment-options {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: flex-start;
+            }
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .btn-secondary {
+            background: var(--gray-600);
+            color: white;
+            border: none;
+            padding: 0.875rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-right: 0.75rem;
+            transition: all 0.2s;
+        }
+
+        .btn-secondary:hover {
+            background: var(--gray-700);
+        }
+    </style>
 </head>
 <body>
-  <h1>Welcome to Our Research Portal</h1>
-  <p>This site is currently under construction. Please check back soon.</p>
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <div class="header-top-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/85254725263" target="_blank">+852 54725263</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-telegram"></i>
+                        <a href="https://t.me/qsctgchannel" target="_blank">t.me/qsctgchannel</a>
+                    </div>
+                </div>
+                <div class="payment-methods">
+                    <span style="opacity: 0.8; font-size: 0.75rem;">12 Crypto Payments Accepted</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="logo" style="display: flex; align-items: center; gap: 0.5rem;">
+                <img src="logo.png" alt="QSC Logo" style="height: 40px; width: auto;">
+            </div>
+            <div class="header-actions">
+                <a href="about.html" style="color: white; text-decoration: none; margin-right: 1.5rem; font-weight: 500; transition: color 0.2s;" onmouseover="this.style.color='#60a5fa'" onmouseout="this.style.color='white'">
+                    <i class="fas fa-info-circle"></i> About
+                </a>
+                <div class="warehouse-selector">
+                    <button class="warehouse-btn active" onclick="selectWarehouse('USA')">🇺🇸 USA</button>
+                    <button class="warehouse-btn" onclick="selectWarehouse('EU')">🇪🇺 EU</button>
+                </div>
+                <button class="cart-btn" onclick="openCart()">
+                    <i class="fas fa-shopping-cart"></i>
+                    Cart <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Qingdao Sigma Chemical Co., Ltd</h1>
+            <p>Premium Research Chemicals & Peptides</p>
+        </div>
+    </section>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Search & Filter -->
+        <div class="search-filter-section">
+            <div class="search-box">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" class="search-input" id="searchInput" placeholder="Search products..." oninput="filterProducts()">
+            </div>
+            <div class="category-tabs">
+                <button class="category-tab active" onclick="filterByCategory('all')">All Products</button>
+                <button class="category-tab" onclick="filterByCategory('oils')">💉 Injectable Oils</button>
+                <button class="category-tab" onclick="filterByCategory('peptides')">🧬 Peptides</button>
+                <button class="category-tab" onclick="filterByCategory('hgh')">💪 HGH</button>
+                <button class="category-tab" onclick="filterByCategory('tablets')">💊 Tablets (USA)</button>
+                <button class="category-tab" onclick="filterByCategory('raw')">⚗️ Raw Powders</button>
+            </div>
+        </div>
+
+        <!-- Products -->
+        <div id="productsContainer"></div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Shopping Cart</h2>
+                <button class="close-btn" onclick="closeCart()">&times;</button>
+            </div>
+            <div class="modal-body" id="cartBody"></div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal" id="checkoutModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Checkout</h2>
+                <button class="close-btn" onclick="closeCheckout()">&times;</button>
+            </div>
+            <div class="modal-body" id="checkoutBody"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Qingdao Sigma Chemical Co., Ltd</p>
+        <p style="margin: 0.5rem 0;">WhatsApp: <a href="https://wa.me/85254725263" target="_blank">+852 54725263</a> | Telegram: <a href="https://t.me/qsctgchannel" target="_blank">t.me/qsctgchannel</a></p>
+        <p style="margin: 1rem 0; font-size: 0.875rem;">Payment Methods: Bitcoin, USDT, ETH, USDC, PYUSD, SOL, XRP, LTC, ADA, BNB, TRON, cbBTC</p>
+        <p style="margin-top: 1.5rem; opacity: 0.7; font-size: 0.875rem;">© 2025 QSC. All rights reserved. For research purposes only.</p>
+    </footer>
+
+    <script>
+        // Product Database
+        const products = {
+            oils: [
+                { id: 'oil001', name: 'Test P', fullName: 'Testosterone Propionate', dosage: '100mg/ml', quantity: '10x10ml (100ml)', price: 140, warehouse: 'USA', category: 'oils', janoshik: null },
+                { id: 'oil002', name: 'Test C', fullName: 'Testosterone Cypionate', dosage: '250mg/ml', quantity: '10x10ml (100ml)', price: 180, warehouse: 'USA', category: 'oils', janoshik: null },
+                { id: 'oil003', name: 'Sustanon', fullName: 'Sustanon 250', dosage: '250mg/ml', quantity: '10x10ml (100ml)', price: 180, warehouse: 'USA', category: 'oils', janoshik: null },
+                { id: 'oil004', name: 'Test U', fullName: 'Testosterone Undecanoate', dosage: '200mg/ml', quantity: '10x10ml (100ml)', price: 200, warehouse: 'USA', category: 'oils', janoshik: null },
+                { id: 'oil005', name: 'Superdrol Injectable', fullName: 'Methyldrostanolone', dosage: '40mg/ml', quantity: '10x10ml (100ml)', price: 200, warehouse: 'USA', category: 'oils', janoshik: null },
+                { id: 'oil006', name: 'NPP', fullName: 'Nandrolone Phenylpropionate', dosage: '100mg/ml', quantity: '10x10ml (100ml)', price: 200, warehouse: 'USA', category: 'oils', janoshik: null },
+                { id: 'oil007', name: 'Deca', fullName: 'Nandrolone Decanoate', dosage: '200mg/ml', quantity: '10x10ml (100ml)', price: 250, warehouse: 'USA', category: 'oils', janoshik: null },
+                { id: 'oil008', name: 'DHB', fullName: 'Dihydroboldenone', dosage: '100mg/ml', quantity: '10x10ml (100ml)', price: 250, warehouse: 'USA', category: 'oils', janoshik: null },
+                { id: 'oil009', name: 'Tren A', fullName: 'Trenbolone Acetate', dosage: '100mg/ml', quantity: '10x10ml (100ml)', price: 250, warehouse: 'USA', category: 'oils', janoshik: null },
+                { id: 'oil010', name: 'Tren E', fullName: 'Trenbolone Enanthate', dosage: '200mg/ml', quantity: '10x10ml (100ml)', price: 350, warehouse: 'USA', category: 'oils', janoshik: null },
+                { id: 'oil011', name: 'Mast P', fullName: 'Masteron Propionate', dosage: '100mg/ml', quantity: '10x10ml (100ml)', price: 350, warehouse: 'USA', category: 'oils', janoshik: null },
+                { id: 'oil012', name: 'Tren H', fullName: 'Trenbolone Hexahydrobenzylcarbonate', dosage: '100mg/ml', quantity: '10x10ml (100ml)', price: 350, warehouse: 'USA', category: 'oils', janoshik: null },
+                { id: 'oil013', name: 'Ripped Blend', fullName: 'Test P/Mast P/Tren A', dosage: '300mg/ml', quantity: '10x10ml (100ml)', price: 350, warehouse: 'USA', category: 'oils', janoshik: null },
+                { id: 'oil014', name: 'Primo E 100', fullName: 'Primobolan Enanthate', dosage: '100mg/ml', quantity: '10x10ml (100ml)', price: 850, warehouse: 'USA', category: 'oils', janoshik: null },
+                { id: 'oil015', name: 'Primo E 200', fullName: 'Primobolan Enanthate', dosage: '200mg/ml', quantity: '10x10ml (100ml)', price: 1250, warehouse: 'USA', category: 'oils', janoshik: null }
+            ],
+
+            peptides: [
+                { id: 'pep001', name: 'ADIPOTIDE', dosage: '10mg', quantity: '10 vials', price: 160, warehouse: 'USA', category: 'peptides', janoshik: null },
+                { id: 'pep002', name: 'AICAR', dosage: '50mg', quantity: '10 vials', price: 60, warehouse: 'USA', category: 'peptides', janoshik: null },
+                { id: 'pep004', name: 'BPC-157', dosage: '20mg', quantity: '10 vials', price: 95, warehouse: 'USA', category: 'peptides', janoshik: 'https://janoshik.com' },
+                { id: 'pep006', name: 'CAGRILINTIDE', dosage: '5mg', quantity: '10 vials', price: 75, warehouse: 'USA', category: 'peptides', janoshik: 'https://janoshik.com' },
+                { id: 'pep007', name: 'CAGRILINTIDE', dosage: '10mg', quantity: '10 vials', price: 130, warehouse: 'USA', category: 'peptides', janoshik: 'https://janoshik.com' },
+                { id: 'pep009', name: 'CJC-1295 NO DAC', dosage: '10mg', quantity: '10 vials', price: 110, warehouse: 'USA', category: 'peptides', janoshik: 'https://janoshik.com' },
+                { id: 'pep034', name: 'SEMAGLUTIDE', dosage: '5mg', quantity: '10 vials', price: 48, warehouse: 'USA', category: 'peptides', janoshik: 'https://janoshik.com' },
+                { id: 'pep035', name: 'SEMAGLUTIDE', dosage: '10mg', quantity: '10 vials', price: 60, warehouse: 'USA', category: 'peptides', janoshik: 'https://janoshik.com' },
+                { id: 'pep036', name: 'SEMAGLUTIDE', dosage: '20mg', quantity: '10 vials', price: 85, warehouse: 'USA', category: 'peptides', janoshik: 'https://janoshik.com' },
+                { id: 'pep048', name: 'TIRZEPATIDE', dosage: '10mg', quantity: '10 vials', price: 65, warehouse: 'USA', category: 'peptides', janoshik: 'https://janoshik.com' },
+                { id: 'pep049', name: 'TIRZEPATIDE', dosage: '15mg', quantity: '10 vials', price: 75, warehouse: 'USA', category: 'peptides', janoshik: 'https://janoshik.com' },
+                { id: 'pep050', name: 'TIRZEPATIDE', dosage: '30mg', quantity: '10 vials', price: 105, warehouse: 'USA', category: 'peptides', janoshik: 'https://janoshik.com' },
+                { id: 'pep031', name: 'RETATRUTIDE', dosage: '10mg', quantity: '10 vials', price: 100, warehouse: 'USA', category: 'peptides', janoshik: 'https://janoshik.com' },
+                { id: 'pep032', name: 'RETATRUTIDE', dosage: '15mg', quantity: '10 vials', price: 140, warehouse: 'USA', category: 'peptides', janoshik: 'https://janoshik.com' },
+                { id: 'pep046', name: 'TB-500', dosage: '10mg', quantity: '10 vials', price: 100, warehouse: 'USA', category: 'peptides', janoshik: 'https://janoshik.com' },
+                { id: 'pep016', name: 'HCG', dosage: '7000IU', quantity: '10 vials', price: 95, warehouse: 'USA', category: 'peptides', janoshik: 'https://janoshik.com' },
+                { id: 'pep019', name: 'IGF-1 LR3', dosage: '1mg', quantity: '10 vials', price: 140, warehouse: 'USA', category: 'peptides', janoshik: 'https://janoshik.com' },
+                { id: 'pep028', name: 'NAD+', dosage: '500mg', quantity: '10 vials', price: 70, warehouse: 'USA', category: 'peptides', janoshik: null },
+                { id: 'pep026', name: 'MOTS-C', dosage: '20mg', quantity: '10 vials', price: 105, warehouse: 'USA', category: 'peptides', janoshik: 'https://janoshik.com' }
+            ],
+
+            hgh: [
+                { id: 'hgh001', name: 'HGH 10iu', fullName: 'Human Growth Hormone', dosage: '10iu per vial', quantity: '10 vials per kit', price: 60, minOrder: 2, warehouse: 'USA', category: 'hgh', janoshik: 'https://janoshik.com' },
+                { id: 'hgh002', name: 'HGH 15iu', fullName: 'Human Growth Hormone', dosage: '15iu per vial', quantity: '10 vials per kit', price: 80, minOrder: 5, warehouse: 'USA', category: 'hgh', janoshik: 'https://janoshik.com' },
+                { id: 'hgh003', name: 'HGH Bulk 600IU', fullName: 'Human Growth Hormone (EU)', dosage: '10iu per vial', quantity: '60 vials (600IU total)', price: 325, minOrder: 1, warehouse: 'EU', category: 'hgh', janoshik: 'https://janoshik.com' }
+            ],
+
+            tablets: [
+                { id: 'tab002', name: 'Superdrol', dosage: '40mg', price: { 100: 60, 500: 275, 1000: 500 }, warehouse: 'USA', category: 'tablets', janoshik: null },
+                { id: 'tab003', name: 'Turinabol', dosage: '60mg', price: { 100: 60, 500: 275, 1000: 500 }, warehouse: 'USA', category: 'tablets', janoshik: null },
+                { id: 'tab004', name: 'Winstrol', dosage: '25mg', price: { 100: 60, 500: 275, 1000: 500 }, warehouse: 'USA', category: 'tablets', janoshik: null },
+                { id: 'tab005', name: 'Oxandrolone (Anavar)', dosage: '70mg', price: { 100: 100, 500: null, 1000: null }, warehouse: 'USA', category: 'tablets', janoshik: null },
+                { id: 'tab011', name: 'Tadalafil', dosage: '50mg', price: { 100: 45, 500: 200, 1000: 350 }, warehouse: 'USA', category: 'tablets', janoshik: null },
+                { id: 'tab010', name: 'Sildenafil', dosage: '150mg', price: { 100: null, 500: 200, 1000: 350 }, warehouse: 'USA', category: 'tablets', janoshik: null }
+            ],
+
+            raw: [
+                { id: 'raw001', name: 'Oxymetholone', quantity: '100g', price: 500, warehouse: 'USA', category: 'raw', janoshik: null },
+                { id: 'raw002', name: 'Test Propionate', quantity: '100g', price: 500, warehouse: 'USA', category: 'raw', janoshik: null },
+                { id: 'raw004', name: 'Test Cypionate', quantity: '100g', price: 600, warehouse: 'USA', category: 'raw', janoshik: null },
+                { id: 'raw006', name: 'Deca', quantity: '100g', price: 1000, warehouse: 'USA', category: 'raw', janoshik: null },
+                { id: 'raw009', name: 'Sildenafil', quantity: '100g', price: 60, warehouse: 'USA', category: 'raw', janoshik: null },
+                { id: 'raw010', name: 'Tadalafil', quantity: '100g', price: 65, warehouse: 'USA', category: 'raw', janoshik: null }
+            ]
+        };
+
+        // Crypto Wallets
+        const cryptoWallets = {
+            btc: { address: 'bc1qhg472p650zyjzuuykv64c8srpjqjjxp7zyyz6p', network: 'Bitcoin Network', icon: '₿', name: 'Bitcoin', qr: 'BTC QR CODE.png' },
+            eth: { address: '0xa8ba449Ff2A03e0Dd044076D4771D50Fb968a02B', network: 'Ethereum Network', icon: 'Ξ', name: 'Ethereum', qr: 'ETH QR CODE.png' },
+            usdt: { address: '0xa8ba449Ff2A03e0Dd044076D4771D50Fb968a02B', network: 'Ethereum (ERC20)', icon: '₮', name: 'USDT', qr: 'TETHER QR CODE.png' },
+            usdc: { address: '0xa8ba449Ff2A03e0Dd044076D4771D50Fb968a02B', network: 'Ethereum (ERC20)', icon: '◉', name: 'USDC', qr: 'USDC QR CODE.png' },
+            pyusd: { address: '0xa8ba449Ff2A03e0Dd044076D4771D50Fb968a02B', network: 'Ethereum (ERC20)', icon: '💲', name: 'PayPal USD', qr: 'PYUSD ETH NETWORK QR CODE.png' },
+            sol: { address: '4wnct8Cwtov7seKiqd4ostndku6KGt7zjgaheVABXwKy', network: 'Solana Network', icon: '◎', name: 'Solana', qr: 'SOLANA QR CODE.png' },
+            xrp: { address: 'rG7styHJw8t8b2AKYphtmu4yuUhUsXnjU2', network: 'XRP Ledger', icon: '✕', name: 'XRP', qr: 'XRP QR CODE.png' },
+            ltc: { address: 'LYjjaN9xmigYDddu5gj23HAaLjkFMDryBM', network: 'Litecoin Network', icon: 'Ł', name: 'Litecoin', qr: 'LTC QR CODE.png' },
+            ada: { address: 'addr1q9dcqk3593e2jqmj2j0206q6590m7m9n4xmdcdpl4cga6k6mspdrgtrj4yphy4y75l5p4g2lhakt82dkms6rlts3m4dsfy7y2w', network: 'Cardano Network', icon: '₳', name: 'Cardano', qr: 'CARDANO QR CODE.png' },
+            bnb: { address: '0xa8ba449Ff2A03e0Dd044076D4771D50Fb968a02B', network: 'BSC (BEP20)', icon: '🟡', name: 'BNB', qr: 'BSC QR CODE.png' },
+            tron: { address: 'TC5FGoMTkeRkSitSFvdoG7vdnERNJjRGfL', network: 'TRON (TRC20)', icon: '🔴', name: 'TRON', qr: 'TRON QR CODE.png' },
+            cbbtc: { address: '0xa8ba449Ff2A03e0Dd044076D4771D50Fb968a02B', network: 'BASE Network', icon: '🔵', name: 'Coinbase Wrapped BTC', qr: 'CB QR CODE.png' }
+        };
+
+        // State
+        let cart = JSON.parse(localStorage.getItem('qsc_cart')) || [];
+        let selectedWarehouse = localStorage.getItem('qsc_warehouse') || 'USA';
+        let currentCategory = 'all';
+        let checkoutStep = 1;
+        let orderData = {};
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            updateCartCount();
+            displayProducts();
+            updateWarehouseButton();
+
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(reg => console.log('Service Worker registered'))
+                    .catch(err => console.log('Service Worker registration failed'));
+            }
+        });
+
+        // Warehouse Selection
+        function selectWarehouse(warehouse) {
+            selectedWarehouse = warehouse;
+            localStorage.setItem('qsc_warehouse', warehouse);
+            document.querySelectorAll('.warehouse-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.textContent.includes(warehouse)) {
+                    btn.classList.add('active');
+                }
+            });
+            displayProducts();
+        }
+
+        function updateWarehouseButton() {
+            document.querySelectorAll('.warehouse-btn').forEach(btn => {
+                if (btn.textContent.includes(selectedWarehouse)) {
+                    btn.classList.add('active');
+                }
+            });
+        }
+
+        // Product Display
+        function displayProducts() {
+            const container = document.getElementById('productsContainer');
+            container.innerHTML = '';
+
+            const categories = {
+                'oils': '💉 Injectable Oils',
+                'peptides': '🧬 Peptides',
+                'hgh': '💪 HGH (Human Growth Hormone)',
+                'tablets': '💊 Oral Tablets (USA Domestic Only)',
+                'raw': '⚗️ Raw Powders'
+            };
+
+            for (const [catKey, catTitle] of Object.entries(categories)) {
+                if (currentCategory !== 'all' && currentCategory !== catKey) continue;
+
+                let categoryProducts = products[catKey].filter(p =>
+                    selectedWarehouse === 'USA' ? p.warehouse === 'USA' : p.warehouse === 'EU'
+                );
+
+                if (categoryProducts.length === 0) continue;
+
+                const section = document.createElement('div');
+                section.className = 'products-section';
+                section.innerHTML = `
+                    <div class="section-header">
+                        <h2 class="section-title">${catTitle}</h2>
+                        <span class="product-count">${categoryProducts.length} products</span>
+                    </div>
+                    <div class="products-grid" id="grid-${catKey}"></div>
+                `;
+                container.appendChild(section);
+
+                const grid = document.getElementById(`grid-${catKey}`);
+                categoryProducts.forEach(product => {
+                    grid.appendChild(createProductCard(product));
+                });
+            }
+
+            if (container.innerHTML === '') {
+                container.innerHTML = '<div style="text-align: center; padding: 3rem; color: var(--gray-600);">No products available for this warehouse</div>';
+            }
+        }
+
+        function createProductCard(product) {
+            const card = document.createElement('div');
+            card.className = 'product-card';
+
+            const isTablet = product.category === 'tablets';
+            const priceDisplay = isTablet ? formatTabletPrice(product.price) : `$${product.price}`;
+
+            card.innerHTML = `
+                <span class="warehouse-badge">${product.warehouse} Warehouse</span>
+                <h3 class="product-name ${product.janoshik ? 'tested' : ''}" ${product.janoshik ? `onclick="window.open('${product.janoshik}', '_blank')"` : ''}>
+                    ${product.name}
+                </h3>
+                <p class="product-dosage">${product.dosage || product.quantity}</p>
+                ${product.quantity && product.dosage ? `<p class="product-dosage">${product.quantity}</p>` : ''}
+                <div class="product-pricing">
+                    <div class="price-main">${priceDisplay}</div>
+                    ${product.minOrder ? `<div class="price-details">Min order: ${product.minOrder} kits</div>` : ''}
+                </div>
+                <button class="add-to-cart-btn" onclick='addToCart(${JSON.stringify(product)})'>
+                    <i class="fas fa-cart-plus"></i> Add to Cart
+                </button>
+            `;
+
+            return card;
+        }
+
+        function formatTabletPrice(priceObj) {
+            if (priceObj[100]) return `$${priceObj[100]} (100 tabs)`;
+            if (priceObj[500]) return `$${priceObj[500]} (500 tabs)`;
+            if (priceObj[1000]) return `$${priceObj[1000]} (1000 tabs)`;
+            return 'Multiple options';
+        }
+
+        // Filter Functions
+        function filterByCategory(category) {
+            currentCategory = category;
+            document.querySelectorAll('.category-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            displayProducts();
+        }
+
+        function filterProducts() {
+            displayProducts();
+        }
+
+        // Cart Functions
+        function addToCart(product) {
+            const existingItem = cart.find(item => item.id === product.id);
+
+            if (existingItem) {
+                existingItem.quantity++;
+            } else {
+                cart.push({ ...product, quantity: 1 });
+            }
+
+            localStorage.setItem('qsc_cart', JSON.stringify(cart));
+            updateCartCount();
+
+            event.target.innerHTML = '<i class="fas fa-check"></i> Added!';
+            event.target.style.background = 'var(--success)';
+            setTimeout(() => {
+                event.target.innerHTML = '<i class="fas fa-cart-plus"></i> Add to Cart';
+                event.target.style.background = 'var(--primary)';
+            }, 1500);
+        }
+
+        function updateCartCount() {
+            const count = cart.reduce((sum, item) => sum + item.quantity, 0);
+            document.getElementById('cartCount').textContent = count;
+        }
+
+        function openCart() {
+            const modal = document.getElementById('cartModal');
+            const body = document.getElementById('cartBody');
+
+            if (cart.length === 0) {
+                body.innerHTML = '<div class="cart-empty"><i class="fas fa-shopping-cart" style="font-size: 3rem; opacity: 0.3; margin-bottom: 1rem;"></i><p>Your cart is empty</p></div>';
+            } else {
+                body.innerHTML = cart.map((item, index) => `
+                    <div class="cart-item">
+                        <div class="cart-item-info">
+                            <div class="cart-item-name">${item.name}</div>
+                            <div class="cart-item-details">${item.dosage || item.quantity}</div>
+                            <div class="cart-item-quantity">
+                                <button class="qty-btn" onclick="updateQuantity(${index}, -1)">-</button>
+                                <span style="font-weight: 700;">${item.quantity}</span>
+                                <button class="qty-btn" onclick="updateQuantity(${index}, 1)">+</button>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="cart-item-price">$${(typeof item.price === 'object' ? (item.price[100] || item.price[500] || item.price[1000]) : item.price) * item.quantity}</div>
+                            <button class="remove-btn" onclick="removeFromCart(${index})"><i class="fas fa-trash"></i> Remove</button>
+                        </div>
+                    </div>
+                `).join('');
+
+                const subtotal = cart.reduce((sum, item) => {
+                    const price = typeof item.price === 'object' ? (item.price[100] || item.price[500] || item.price[1000]) : item.price;
+                    return sum + (price * item.quantity);
+                }, 0);
+
+                const shipping = selectedWarehouse === 'USA' ? 20 : 30;
+                const total = subtotal + shipping;
+
+                body.innerHTML += `
+                    <div class="cart-summary">
+                        <div class="summary-row">
+                            <span>Subtotal:</span>
+                            <span>$${subtotal}</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping (${selectedWarehouse}):</span>
+                            <span>$${shipping}</span>
+                        </div>
+                        <div class="summary-row summary-total">
+                            <span>Total:</span>
+                            <span>$${total}</span>
+                        </div>
+                        <button class="checkout-btn" onclick="startCheckout()">
+                            Proceed to Checkout <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                `;
+            }
+
+            modal.classList.add('active');
+        }
+
+        function closeCart() {
+            document.getElementById('cartModal').classList.remove('active');
+        }
+
+        function updateQuantity(index, change) {
+            cart[index].quantity += change;
+            if (cart[index].quantity <= 0) {
+                cart.splice(index, 1);
+            }
+            localStorage.setItem('qsc_cart', JSON.stringify(cart));
+            updateCartCount();
+            openCart();
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            localStorage.setItem('qsc_cart', JSON.stringify(cart));
+            updateCartCount();
+            openCart();
+        }
+
+        // Checkout Functions
+        function startCheckout() {
+            closeCart();
+            checkoutStep = 1;
+            orderData = {
+                items: [...cart],
+                warehouse: selectedWarehouse,
+                subtotal: cart.reduce((sum, item) => {
+                    const price = typeof item.price === 'object' ? (item.price[100] || item.price[500] || item.price[1000]) : item.price;
+                    return sum + (price * item.quantity);
+                }, 0)
+            };
+
+            document.getElementById('checkoutModal').classList.add('active');
+            renderCheckoutStep();
+        }
+
+        function closeCheckout() {
+            document.getElementById('checkoutModal').classList.remove('active');
+        }
+
+        function renderCheckoutStep() {
+            const body = document.getElementById('checkoutBody');
+
+            if (checkoutStep === 1) {
+                body.innerHTML = `
+                    <div class="checkout-steps">
+                        <div class="step active">
+                            <div class="step-number">1</div>
+                            <div class="step-label">Shipping Info</div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-label">Payment</div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-label">Complete</div>
+                        </div>
+                    </div>
+
+                    <h3 style="margin-bottom: 1.5rem; font-size: 1.25rem;">Shipping Information</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label class="form-label">Email Address *</label>
+                            <input type="email" class="form-input" id="email" required placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Shipping Address *</label>
+                            <textarea class="form-input" id="address" rows="3" required placeholder="Street, City, State, ZIP, Country"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Special Instructions (Optional)</label>
+                            <textarea class="form-input" id="notes" rows="2" placeholder="Any special requests..."></textarea>
+                        </div>
+                        <button type="button" class="checkout-btn" onclick="nextCheckoutStep()">
+                            Continue to Payment <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                `;
+            } else if (checkoutStep === 2) {
+                body.innerHTML = `
+                    <div class="checkout-steps">
+                        <div class="step completed">
+                            <div class="step-number">✓</div>
+                            <div class="step-label">Shipping Info</div>
+                        </div>
+                        <div class="step active">
+                            <div class="step-number">2</div>
+                            <div class="step-label">Payment</div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-label">Complete</div>
+                        </div>
+                    </div>
+
+                    <h3 style="margin-bottom: 1.5rem; font-size: 1.25rem;">Select Payment Method</h3>
+                    <div class="payment-options">
+                        ${Object.entries(cryptoWallets).map(([key, wallet]) => `
+                            <div class="payment-option" onclick="selectPayment('${key}')">
+                                <div class="payment-icon">${wallet.icon}</div>
+                                <div class="payment-name">${wallet.name}</div>
+                                <div class="payment-network">${wallet.network}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div id="paymentDetails"></div>
+                    <button type="button" class="btn-secondary" onclick="checkoutStep=1; renderCheckoutStep()">
+                        <i class="fas fa-arrow-left"></i> Back
+                    </button>
+                `;
+            } else if (checkoutStep === 3) {
+                body.innerHTML = `
+                    <div class="checkout-steps">
+                        <div class="step completed">
+                            <div class="step-number">✓</div>
+                            <div class="step-label">Shipping Info</div>
+                        </div>
+                        <div class="step completed">
+                            <div class="step-number">✓</div>
+                            <div class="step-label">Payment</div>
+                        </div>
+                        <div class="step active">
+                            <div class="step-number">3</div>
+                            <div class="step-label">Complete</div>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-success">
+                        <h3 style="margin-bottom: 0.5rem; font-size: 1.25rem;">✅ Order Placed Successfully!</h3>
+                        <p style="font-size: 1.125rem; font-weight: 700;">Order #${orderData.orderId}</p>
+                    </div>
+
+                    <div class="alert alert-info">
+                        <h4 style="font-size: 1.125rem; margin-bottom: 1rem;">📱 Next Steps:</h4>
+                        <ol style="margin: 1rem 0; padding-left: 1.5rem; line-height: 2;">
+                            <li>Send payment to the provided ${cryptoWallets[orderData.paymentMethod].name} address</li>
+                            <li>Contact us on WhatsApp: <strong>+852 54725263</strong></li>
+                            <li>Provide your order number: <strong>${orderData.orderId}</strong></li>
+                            <li>Send payment confirmation screenshot</li>
+                        </ol>
+                        <p style="margin-top: 1.5rem; font-weight: 600;">We'll verify your payment and ship within 24 hours!</p>
+                    </div>
+
+                    <button class="checkout-btn" onclick="completeOrder()">
+                        <i class="fab fa-whatsapp"></i> Contact on WhatsApp
+                    </button>
+                `;
+            }
+        }
+
+        function nextCheckoutStep() {
+            const email = document.getElementById('email').value;
+            const address = document.getElementById('address').value;
+
+            if (!email || !address) {
+                alert('Please fill in all required fields');
+                return;
+            }
+
+            orderData.email = email;
+            orderData.address = address;
+            orderData.notes = document.getElementById('notes').value;
+
+            checkoutStep = 2;
+            renderCheckoutStep();
+        }
+
+        function selectPayment(method) {
+            document.querySelectorAll('.payment-option').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+            event.target.closest('.payment-option').classList.add('selected');
+
+            orderData.paymentMethod = method;
+            const wallet = cryptoWallets[method];
+
+            const shipping = selectedWarehouse === 'USA' ? 20 : 30;
+            const total = orderData.subtotal + shipping;
+
+            document.getElementById('paymentDetails').innerHTML = `
+                <div class="payment-details">
+                    <h4 style="font-size: 1.25rem; margin-bottom: 1.5rem; text-align: center;">${wallet.name} Payment Instructions</h4>
+
+                    <div class="qr-code">
+                        <img src="${wallet.qr}" alt="${wallet.name} QR Code" style="width: 100%; height: 100%; object-fit: contain; border-radius: 6px;">
+                    </div>
+
+                    <div style="margin: 2rem 0; text-align: center;">
+                        <div style="font-weight: 600; margin-bottom: 0.5rem;">Amount to Send:</div>
+                        <div style="font-size: 2rem; color: var(--accent); margin: 0.5rem 0; font-weight: 700;">
+                            $${total} USD
+                        </div>
+                        <small style="color: var(--gray-600);">Convert to ${wallet.name} at current exchange rate</small>
+                    </div>
+
+                    <div style="margin-bottom: 1rem;">
+                        <div style="font-weight: 600; margin-bottom: 0.75rem;">${wallet.name} Address (${wallet.network}):</div>
+                        <div class="wallet-address">${wallet.address}</div>
+                        <button class="copy-btn" onclick="copyAddress('${wallet.address}')">
+                            <i class="fas fa-copy"></i> Copy Address
+                        </button>
+                    </div>
+
+                    <div class="alert alert-warning">
+                        <strong>⚠️ Important:</strong>
+                        <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+                            <li>Send ONLY ${wallet.name} to this address</li>
+                            <li>Network: ${wallet.network}</li>
+                            <li>Save transaction hash for verification</li>
+                        </ul>
+                    </div>
+
+                    <button class="checkout-btn" onclick="confirmPayment()" style="margin-top: 1.5rem;">
+                        I've Sent the Payment ✅
+                    </button>
+                </div>
+            `;
+        }
+
+        function copyAddress(address) {
+            navigator.clipboard.writeText(address);
+            event.target.innerHTML = '<i class="fas fa-check"></i> Copied!';
+            event.target.style.background = 'var(--success)';
+            setTimeout(() => {
+                event.target.innerHTML = '<i class="fas fa-copy"></i> Copy Address';
+                event.target.style.background = 'var(--accent)';
+            }, 2000);
+        }
+
+        function confirmPayment() {
+            orderData.orderId = 'QSC-' + Date.now();
+            checkoutStep = 3;
+            renderCheckoutStep();
+        }
+
+        function completeOrder() {
+            window.open('https://wa.me/85254725263', '_blank');
+            cart = [];
+            localStorage.setItem('qsc_cart', JSON.stringify(cart));
+            updateCartCount();
+            setTimeout(() => {
+                closeCheckout();
+            }, 1000);
+        }
+    </script>
 </body>
 </html>
